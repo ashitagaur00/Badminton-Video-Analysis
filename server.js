@@ -9,7 +9,7 @@ app.use(express.static(__dirname + '/dist/<badminton-video-analysis>'));
 
 app.get('/*', function (req, res) {
 
-  res.sendFile(path.join(__dirname + '/dist/<badminton-video-analysis>/index.html'));
+  res.sendFile(path.join(__dirname + '/dist/<badminton-video-analysis>/dashboard.component.html'));
 });
 
 // Start the app by listening on the default Heroku port
