@@ -1,0 +1,149 @@
+.card {
+  box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.700);
+  max-width: 300px;
+  text-align: left;
+  margin: 0 auto;
+  border: 1px solid black;
+
+  /* position: absolute;
+    top: 700px;
+    left:200px; */
+  border-radius: 20px;
+  background-image: linear-gradient(315deg, #000000 0%, #414141 74%);
+}
+
+.vs {
+  text-align: center;
+  color: black;
+  font-family: "Great Vibes", cursive;
+  font-size: 60px;
+  line-height: 160px;
+  font-weight: normal;
+  margin-bottom: 0px;
+  margin-top: 120px;
+  text-align: center;
+
+}
+
+
+
+
+.container {
+  position: relative;
+  width: auto;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+  box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.700);
+
+
+
+}
+
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-image: linear-gradient(to right, #94e9e7, #eeaeae, #94e9e7);
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+  border-radius: 20px;
+
+}
+
+.container:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
+
+.text-card {
+  white-space: nowrap;
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+
+
+h1 {
+  align-self: auto;
+  text-align: center;
+  font-family: cursive;
+  color: black;
+  ;
+
+
+
+}
+
+h2 {
+  color: white;
+  text-decoration: underline;
+
+}
+
+.text {
+  color: #0ABFBC;
+  text-align: center;
+  font-family: cursive;
+
+
+}
+
+.text1 {
+  color: purple;
+  text-align: center;
+  font-family: cursive;
+  text-decoration: underline;
+
+}
+
+.btn {
+
+  border-radius: 40px;
+  background-color: black;
+  color: #0ABFBC;
+
+
+  padding: 15px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.781);
+  min-width: 50px;
+  width: 200px;
+  cursor: pointer;
+  margin: 0 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+
+
+#grad1 {
+
+
+  /* For browsers that do not support gradients */
+  border-radius: 0px;
+  height: 100%;
+
+
+  /* background-image: linear-gradient(315deg, #000000 0%, #414141 74%); */
+  background-image: linear-gradient(to right, #94e9e7, #eeaeae, #94e9e7);
+
+}

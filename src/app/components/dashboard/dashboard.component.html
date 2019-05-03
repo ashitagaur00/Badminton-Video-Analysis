@@ -1,0 +1,51 @@
+<div class="conatiner" id="grad2">
+  <div class="text">
+
+    <h1>
+      Structured Analysis of Broadcast Badminton Videos
+    </h1>
+    <p>
+      Visualizations help you to tell a complete story with match data ,analyse all the attributes of a game stroke by
+      stroke and provide a set of more
+      data about the match and players performance with a large corpus of badminton broadcast videos by segmenting the
+      players in each point and annotating their respective badminton strokes.</p>
+  </div>
+
+  <div class="container-start">
+    <div class="cardContainer row">
+      <div class="col-xs-12 col-md-3">
+
+        <div class="card dropdown">
+          <h1>Choose video </h1>
+          <button class="dropbtn" (click)="navigatePage()"> Men'singles finals 2012 </button>
+          <button class="dropbtn" (click)="navigatePage()"> Men'singles semifinals 2012 </button>
+          <button class="dropbtn" (click)="navigatePage()"> Man's singles finals 2016</button>
+          <button class="dropbtn" (click)="navigatePage()"> Man's singles semifinals 2016 </button>
+          <button class="dropbtn"> Spain V/s Indonesia </button>
+
+          <h1>Upload video </h1>
+          <button class="dropbtn"> Upload from PC </button>
+          <button class="dropbtn">Upload from Google Drive</button>
+
+
+        </div>
+      </div>
+
+      <div class="col-xs-12 col-md-9">
+        <div class="card-video">
+          <vg-player>
+            <video [vgMedia]="media" #media id="singleVideo" preload="auto" controls>
+              <source src="" type="video/mp4">
+            </video>
+          </vg-player>
+          <!-- <video id="myvedio" width="100%" height="452" controls (click)="startTimer()">
+          <source src="../assets/video/find location.mp4" type="video/mp4">
+          Your browser does not support HTML5 video.
+        </video> -->
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr class="zig-zag">
+</div>

@@ -1,0 +1,81 @@
+* {
+  border-radius: 15px;
+  margin-bottom: 2px;
+
+}
+
+.card {
+  box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.700);
+  max-width: 500px;
+  text-align: left;
+  margin: 0 auto;
+  background-color: #3d577a;
+  /* background-image: linear-gradient(315deg, #000000 0%, #414141 74%);
+  border-radius: 10px; */
+
+
+  /* position: absolute;
+    top: 700px;
+    left:200px; */
+}
+
+.card-video {
+  box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.700);
+  margin: 0 0;
+  height: 505px;
+  width: auto;
+  border-radius: 40px;
+}
+
+h1,
+h2,
+h5,
+h3 {
+  color: #94e9e7;
+  text-align: center;
+  font-family: cursive;
+  text-decoration: underline;
+
+
+}
+
+
+.text {
+  color: #fff;
+  text-align: center;
+  font-family: cursive;
+
+
+}
+
+
+#grad3 {
+  background-image: linear-gradient(#eeaeae, #94e9e7, #eeaeae);
+
+  border-radius: 0px;
+}
+
+video {
+  width: 100%;
+  border-radius: 20px;
+
+}
+
+img {
+  height: 170px;
+}
+
+.zig-zag {
+  border: none;
+  width: auto;
+  margin: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  height: 20px;
+  background: linear-gradient(135deg, #eeaeae 25%, transparent 25%) -20px 0,
+    linear-gradient(225deg, #eeaeae 25%, transparent 25%) -20px 0,
+    linear-gradient(315deg, #94e9e7 25%, transparent 25%),
+    linear-gradient(45deg, #94e9e7 25%, transparent 25%);
+  background-size: 40px 40px;
+  background-color: white;
+}

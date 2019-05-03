@@ -1,0 +1,211 @@
+<div class="container-end" id="grad3">
+
+  <h1 class=" text">
+    Video-Analysis
+  </h1>
+
+
+  <div class="cardContainer row">
+    <div class="col-xs-12 col-md-6">
+      <div class="card1-vedio">
+        <vg-player (onPlayerReady)="onPlayerReady($event)">
+          <video [vgMedia]="media" #media id="singleVideo" preload="auto" controls>
+            <source
+              src="../../../assets/video/Hidayat (INA) v Abian (ESP) - Men's Singles Badminton Group O - Full Replay - Lo(0).mp4"
+              type="video/mp4">
+          </video>
+        </vg-player>
+      </div>
+    </div>
+
+    <div class="col-xs-12 col-md-3">
+      <div class="card">
+        <div class="card2">
+          <h1>Score </h1>
+          <h3 class=" text">{{min}} Min {{sec}} Sec</h3>
+          <hr style="color: #000000">
+
+          <table style="width:100%">
+            <tr>
+              <th class=" text">
+                <h2> Player 1</h2>
+              </th>
+              <th class=" text">
+                <h2> Player 2</h2>
+              </th>
+            </tr>
+            <tr>
+              <th class=" text"> Taufik Hidayat </th>
+              <th class=" text">Pablo Abián</th>
+            </tr>
+
+            <tr>
+              <td class=" text">{{player1.scorePoint}}</td>
+              <td class=" text">{{player2.scorePoint}}</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-xs-12 col-md-3">
+      <div class="card">
+        <div class="card3">
+          <h1 class=" text_center"> Record </h1>
+          <hr style="color: #000000">
+          <table class="text" style="width:100%">
+            <tr>
+              <th>
+                <h5>Technique</h5>
+              </th>
+              <th>
+                <h5>Player 1</h5>
+              </th>
+              <th>
+                <h5>Player 2</h5>
+              </th>
+
+            </tr>
+            <tr>
+              <td>Serve</td>
+              <td>{{player1.servePoint}}</td>
+              <td>{{player2.servePoint}}</td>
+            </tr>
+            <tr>
+              <td>Forhead</td>
+              <td>{{player1.forHeadPoint}}</td>
+              <td>{{player2.forHeadPoint}}</td>
+            </tr>
+            <tr>
+              <td>Backhead</td>
+              <td>{{player1.backHeadPoint}}</td>
+              <td>{{player2.backHeadPoint}}</td>
+            </tr>
+            <tr>
+              <td>Smash</td>
+              <td>{{player1.smashPoint}}</td>
+              <td>{{player2.smashPoint}}</td>
+            </tr>
+          </table>
+
+        </div>
+      </div>
+    </div>
+    <div class="col-xs-12 col-md-3">
+      <div class="card">
+        <div class="card4">
+          <h3>
+            Relay & Loose Stroke
+          </h3>
+          <img src="../../../assets/images/graph.jpg" alt=" " style="width:100%">
+        </div>
+      </div>
+    </div>
+    <div class="col-xs-12 col-md-3">
+      <div class="card">
+        <div class="card5">
+          <h2 class="text_center"> Quantitative</h2>
+          <p class="text">(Highest:10) , (Lowest :1)</p>
+          <table style="width:100%" class="text">
+            <tr>
+              <th> Technique </th>
+              <th>Player 1</th>
+              <th>Player 2</th>
+
+            </tr>
+            <tr>
+              <td>Serve</td>
+              <td>{{player1.serveQuantPoint}}</td>
+              <td>{{player2.serveQuantPoint}}</td>
+            </tr>
+            <tr>
+              <td>Forhead</td>
+              <td>{{player1.fhQuantPoint}}</td>
+              <td>{{player2.fhQuantPoint}}</td>
+            </tr>
+            <tr>
+              <td>Backhead</td>
+              <td>{{player1.bhQuantPoint}}</td>
+              <td>{{player2.bhQuantPoint}}</td>
+            </tr>
+            <tr>
+              <td>Smash</td>
+              <td>{{player1.smashQuantPoint}}</td>
+              <td>{{player2.smashQuantPoint}}</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div class="col-xs-12 col-md-3">
+      <div class="card">
+        <div class="card6">
+          <h2> Qualitative </h2>
+          <p class="text"> (Best:***) , (Good:**) , (NotGood:*)</p>
+          <table class="text" style="width:100%">
+            <tr>
+              <th> Technique </th>
+              <th>Player 1</th>
+              <th>Player 2</th>
+
+            </tr>
+            <tr>
+              <td>Serve</td>
+              <td>{{player1.serveQualiPoint}}</td>
+              <td>{{player2.serveQualiPoint}}</td>
+            </tr>
+            <tr>
+              <td>Forhead</td>
+              <td>{{player1.fhQualiPoint}}</td>
+              <td>{{player2.fhQualiPoint}}</td>
+            </tr>
+            <tr>
+              <td>Backhead</td>
+              <td>{{player1.bhQualiPoint}}</td>
+              <td>{{player2.bhQualiPoint}}</td>
+            </tr>
+            <tr>
+              <td>Smash</td>
+              <td>{{player1.smashQualiPoint}}</td>
+              <td>{{player2.smashQualiPoint}}</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div class="col-xs-12 col-md-3">
+      <div class="card">
+        <div class="card7">
+          <div class="text_center">
+            <h3> Mathamatical Analysis </h3>
+            <h5 class="text"> No of strokes in a point </h5>
+            <table class="text" style="width:100%">
+              <tr>
+                <th> Player 1 = {{player1.sPoint}} </th>
+                <th>Player 2 = {{player2.sPoint}}</th>
+              </tr>
+            </table>
+            <h5 class="text"> Avg speed in a point(m/s) </h5>
+            <table class="text" style="width:100%">
+              <tr>
+                <th> Player 1 = {{player1.spPoint}} </th>
+                <th>Player 2 = {{player2.spPoint}}</th>
+              </tr>
+            </table>
+            <h5 class="text"> Avg reaction time </h5>
+            <table class="text" style="width:100%">
+              <tr>
+                <th> Player 1 = {{player1.rtPoint}} </th>
+                <th>Player 2 = {{player2.rtPoint}}</th>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr class="zig-zag">
+
+
+
+</div>

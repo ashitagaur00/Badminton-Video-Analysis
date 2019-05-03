@@ -1,0 +1,77 @@
+.card {
+    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.700);
+    max-width: 300px;
+    text-align: left;
+    margin: 0 auto;
+
+    /* position: absolute;
+    top: 700px;
+    left:200px; */
+}
+.card-video {
+    box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.700);
+    margin: 0 0;
+    height: 505px;
+    width: auto;
+    background-color: rgba(255, 255, 255, 0.39);
+
+    
+    /* position: absolute;
+    top: 700px;
+    left:200px; */
+}
+h3{
+    text-align:center;
+}
+.vs{
+    text-align: center;
+    color: #d54d7b; font-family: "Great Vibes", cursive; font-size: 120px; line-height: 160px; font-weight: normal; margin-bottom: 0px; margin-top: 120px; text-align:center; text-shadow: 0 1px 5px aquamarine; 
+}
+.card span{
+    display: block;
+    text-align: center;
+
+    line-height: 1;
+    margin-top: 0.4rem;
+}
+  h1{
+      align-self: auto;
+      text-align: center;
+      font-family: cursive;
+      color:#d54d7b;
+      
+  }
+  .title {
+    color:black;
+    font-size: 18px;
+    text-align: initial;
+  }
+  h2 { color: #d54d7b;
+     font-family: "Great Vibes", "cursive"; 
+     font-size: 165px; 
+     line-height: 160px;
+      font-weight: normal; 
+      margin-bottom: 0px; 
+      margin-top: 600px; 
+      text-align: center; 
+      text-shadow: 0 1px 1px #fff; 
+    
+}
+
+.dropbtn {
+    background-color:skyblue;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    width: 298px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.781);
+    
+  }
+.dropbtn:hover {
+    background-color:grey ;
+  }
+  
+  
+  
